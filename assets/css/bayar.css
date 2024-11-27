@@ -1,0 +1,218 @@
+/* PAYMENT SECTION HEADER */
+.payment-card h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ffce00; /* Highlighted yellow */
+    margin-bottom: 20px;
+}
+
+/* PAYMENT CARD */
+.payment-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.payment-card p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.payment-card label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+.payment-card select,
+.payment-card input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+/* PAYMENT FORM */
+.payment-form-label {
+    font-size: 1rem;
+    color: #ffce00;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.payment-form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #ffffff00;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.payment-form-control:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 206, 0, 0.5);
+    outline: none;
+}
+
+/* PAYMENT BUTTON */
+.payment-btn {
+    background-color: #ffce00;
+    color: #121212;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.payment-btn:hover {
+    background-color: #ffc107;
+    box-shadow: 0 4px 10px rgba(255, 206, 0, 0.7);
+}
+
+/* PAYMENT CARD BUTTON */
+.payment-card button {
+    background-color: #f5a623;
+    border: none;
+    color: #e7e7e7;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.payment-card button:hover {
+    background-color: #181006;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* BANK DETAILS */
+#bank-details {
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 15px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .payment-section {
+        padding: 20px 15px;
+    }
+
+    .payment-section-header h1 {
+        font-size: 2rem;
+    }
+
+    .payment-card {
+        padding: 15px;
+    }
+
+    .payment-btn {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.payment-card {
+    background-color: rgba(10, 9, 24, 0.8);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    max-width: 600px;
+}
+
+.payment-card h1 {
+    font-size: 2rem;
+    color: #ffce00;
+    margin-bottom: 20px;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.data-label {
+    font-size: 1rem;
+    color: #ffce00;
+    font-weight: bold;
+}
+
+.data-value {
+    font-size: 1rem;
+}
+
+.select-container {
+    margin: 15px 0;
+}
+
+.select-container select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffc107;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+}
+
+.select-container select:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+.payment-btn {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffce00;
+    color: #121212;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.payment-btn:hover {
+    background-color: #ffc107;
+    box-shadow: 0 4px 10px rgba(255, 206, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+    .payment-card {
+        padding: 15px;
+    }
+
+    .payment-card h1 {
+        font-size: 1.5rem;
+    }
+}

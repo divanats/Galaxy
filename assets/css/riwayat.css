@@ -1,0 +1,85 @@
+/* Gaya khusus untuk halaman Riwayat Pemesanan */
+.galaxy-theme {
+    background: radial-gradient(circle at bottom, #1a1a40, #000814, #020024);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+  /* Container khusus */
+  .galaxy-container {
+    background-color: #1c14314b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Judul */
+  .galaxy-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffdd00;
+    text-shadow: 0px 0px 15px rgba(255, 221, 0, 0.8);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Tabel */
+  .galaxy-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .galaxy-table thead {
+    background-color: #8e6ee04b;
+    color: 1c14314b;
+  }
+  
+  .galaxy-table thead th {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .galaxy-table tbody tr:nth-child(even) {
+    background-color: #1c14314b;
+  }
+  
+  .galaxy-table tbody tr:hover {
+    background-color: #1c14314b;
+  }
+  
+  .galaxy-table tbody td {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Tombol */
+  .galaxy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .galaxy-button:hover {
+    background-color: #357abd;
+  }
+  
+  /* Responsif */
+  @media (max-width: 768px) {
+    .galaxy-title {
+      font-size: 20px;
+    }
+  
+    .galaxy-table {
+      font-size: 14px;
+    }
+  }
+  

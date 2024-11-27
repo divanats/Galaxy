@@ -1,0 +1,184 @@
+/* ======= Galaxy Theme Styles (Improved) ======= */
+
+/* Latar belakang bertema Galaxy */
+.galaxy-theme {
+    background: radial-gradient(circle at bottom, #1a1a40, #000814, #020024);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Gaya untuk Header */
+.galaxy-theme .section-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.galaxy-theme .section-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffdd00;
+    text-shadow: 0px 0px 15px rgba(255, 221, 0, 0.8);
+}
+
+/* Tombol Galaxy */
+.galaxy-theme .btn {
+    background: #5742a3; /* Warna biru solid */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galaxy-theme .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 20px rgba(12, 14, 32, 0.8);
+}
+
+/* Kartu Event */
+.galaxy-theme .card {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-bottom: 20px; /* Tambahkan margin antar kartu */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    align-items: center;
+    max-width: 800px; /* Batas maksimal lebar card */
+    width: 100%; /* Agar card responsif sesuai container */
+    margin-left: auto; /* Pusatkan card secara horizontal */
+    margin-right: auto;
+}
+
+.galaxy-theme .card:hover {
+    transform: scale(1.05);
+}
+
+/* Judul Kartu */
+.galaxy-theme .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Informasi Jadwal */
+.galaxy-theme .show-section {
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.galaxy-theme .show-section p {
+    margin: 0;
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+/* Harga */
+.galaxy-theme .price p {
+    font-weight: bold;
+    color: #ffdd00;
+}
+
+/* Input Date */
+.galaxy-theme .form-control {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid #ff0075;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.galaxy-theme .form-control:focus {
+    box-shadow: 0px 0px 10px rgba(255, 0, 117, 0.8);
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .galaxy-theme .card {
+        padding: 15px;
+    }
+    .galaxy-theme .card-title {
+        font-size: 1.2rem;
+    }
+    .galaxy-theme .section-header h1 {
+        font-size: 2rem;
+    }
+}
+/* ======= Tambahan CSS untuk Garis Vertikal Pembatas ======= */
+
+/* Garis pembatas antar informasi */
+.galaxy-theme .show-info {
+    display: flex;
+    flex-wrap: wrap; /* Agar tetap responsif pada layar kecil */
+    justify-content: space-between;
+    gap: 15px; /* Spasi antar elemen */
+}
+
+.galaxy-theme .show-section {
+    padding: 0 15px; /* Ruang di kiri dan kanan setiap elemen */
+    text-align: center; /* Teks di tengah */
+    flex: 1; /* Agar semua elemen menyesuaikan lebar */
+    min-width: 120px; /* Lebar minimum untuk tampilan responsif */
+    position: relative; /* Untuk garis vertikal */
+    display: flex; /* Gunakan Flexbox */
+    flex-direction: column; /* Tumpuk konten secara vertikal */
+    justify-content: center; /* Pusatkan konten secara vertikal */
+    align-items: center; /* Pusatkan konten secara horizontal */
+}
+
+/* Garis vertikal */
+.galaxy-theme .show-section:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.3); /* Warna garis dengan transparansi */
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 768px) {
+    .galaxy-theme .show-info {
+        flex-direction: column; /* Elemen ditumpuk secara vertikal */
+    }
+    .galaxy-theme .show-section {
+        min-width: 90%; /* Lebar penuh pada layar kecil */
+        padding: 10px 0; /* Sesuaikan padding */
+    }
+    .galaxy-theme .show-section:not(:last-child)::after {
+        display: none; /* Hilangkan garis pada layar kecil */
+    }
+}
+.galaxy-theme .card-container {
+    display: flex;
+    justify-content: center; /* Pusatkan kartu secara horizontal */
+    align-items: center; /* Pusatkan kartu secara vertikal */
+    flex-direction: column; /* Susun kartu secara vertikal */
+    min-height: 100vh; /* Tinggi minimum setara layar penuh */
+}
+
+/* ======= Button di Samping Tulisan ======= */
+.galaxy-theme .text-button-wrapper {
+    display: flex;
+    justify-content: space-between; /* Jarak maksimal antara elemen */
+    align-items: center; /* Selaraskan secara vertikal */
+    gap: 15px; /* Spasi antara tulisan dan tombol */
+}
+
+.galaxy-theme .text-button-wrapper .btn {
+    flex-shrink: 0; /* Pastikan tombol tidak mengecil */
+}
+
+.galaxy-theme .text-button-wrapper p {
+    margin: 0; /* Hilangkan margin default */
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
